@@ -1,0 +1,1939 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.owl-ontologies.com/transport", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/example" ],
+    "title" : {
+      "en" : "Ontology about Smart Tourism and Recomendations (OTIR)"
+    },
+    "iri" : "https://w3id.org/example#",
+    "version" : "1.0.1",
+    "author" : [ "https://w3id.org/people#MiquelPratsURI" ],
+    "description" : {
+      "en" : "This ontology is a set diferent restaurants, events, hotels, points of interest and transports from different spanish cities."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "priorVersion" : [ {
+        "identifier" : "priorVersion",
+        "language" : "undefined",
+        "value" : "https://w3id.org/example/1.0.0",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://w3id.org/people#MiquelPratsURI",
+        "type" : "iri"
+      } ],
+      "createdWith" : [ {
+        "identifier" : "createdWith",
+        "language" : "undefined",
+        "value" : "https://chowlk.linkeddata.es/",
+        "type" : "iri"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2025-04-21",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "otir",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0.1",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Ontology about Smart Tourism and Recomendations (OTIR)",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2025-04-27",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "112",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "117",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "115",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.owl-ontologies.com/transport#POI",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "POI",
+      "undefined" : "POI"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/example#CastellSevilla",
+      "baseIri" : "https://w3id.org/example",
+      "comment" : {
+        "undefined" : "Castle of Sevilla"
+      },
+      "labels" : {
+        "IRI-based" : "CastellSevilla",
+        "undefined" : "CastellSevilla"
+      }
+    } ],
+    "subClasses" : [ "7", "8", "9", "10" ],
+    "comment" : {
+      "undefined" : "Class that represents all points of interest found in the ontology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#Museum",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Museum",
+      "undefined" : "Museum"
+    },
+    "comment" : {
+      "undefined" : "Subclass of POI that represents all point of interests that are museums and can be found in the ontology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "7",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#Mediterranean",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Mediterranean",
+      "undefined" : "Mediterranean"
+    },
+    "comment" : {
+      "undefined" : "Subclass that represents all mediterranean style restaurants found in the ontology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "13",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#Tram",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tram",
+      "undefined" : "Tram"
+    },
+    "comment" : {
+      "undefined" : "Subclass of Transport that represents all trams found in the ontology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "14",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#Restaurant",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Restaurant",
+      "undefined" : "Restaurant"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/example#RestaurantSaborSevilla",
+      "baseIri" : "https://w3id.org/example",
+      "comment" : {
+        "undefined" : "Restaurant Sabor Sevilla"
+      },
+      "labels" : {
+        "IRI-based" : "RestaurantSaborSevilla",
+        "undefined" : "RestaurantSaborSevilla"
+      }
+    } ],
+    "subClasses" : [ "28", "29", "13", "30", "31" ],
+    "comment" : {
+      "undefined" : "Class that represents all restaurants found in the ontology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#Bus",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Bus",
+      "undefined" : "Bus"
+    },
+    "comment" : {
+      "undefined" : "Subclass of Transport that represents all buses found in the ontology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "39",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#Mexican",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Mexican",
+      "undefined" : "Mexican"
+    },
+    "comment" : {
+      "undefined" : "Subclass that represents all mexican style restaurants found in the ontology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "30",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#Taxi",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Taxi",
+      "undefined" : "Taxi"
+    },
+    "comment" : {
+      "undefined" : "Subclass of Transport that represents all taxies found in the ontology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "25",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "60",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "62",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#City",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "City",
+      "undefined" : "City"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/example#Sevilla",
+      "baseIri" : "https://w3id.org/example",
+      "comment" : {
+        "undefined" : "Sevilla"
+      },
+      "labels" : {
+        "IRI-based" : "Sevilla",
+        "undefined" : "Sevilla"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Class that represents all cities found in the ontology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "65",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#Hotel",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Hotel",
+      "undefined" : "Hotel"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.owl-ontologies.com/transport#HotelVistaSevilla",
+      "baseIri" : "http://www.owl-ontologies.com/transport",
+      "comment" : {
+        "undefined" : "Hotel Vista Sevilla"
+      },
+      "labels" : {
+        "IRI-based" : "HotelVistaSevilla",
+        "undefined" : "HotelVistaSevilla"
+      }
+    } ],
+    "subClasses" : [ "66", "67", "68", "69" ],
+    "comment" : {
+      "undefined" : "Class that represents all hotels found in the ontology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#Event",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event",
+      "undefined" : "Event"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/example#CarnavalSevilla",
+      "baseIri" : "https://w3id.org/example",
+      "comment" : {
+        "undefined" : "Carnaval of Sevilla"
+      },
+      "labels" : {
+        "IRI-based" : "CarnavalSevilla",
+        "undefined" : "CarnavalSevilla"
+      }
+    } ],
+    "subClasses" : [ "18", "19", "2", "21", "1" ],
+    "comment" : {
+      "undefined" : "Class that represents all events found in the ontology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#HotelBeach",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HotelBeach",
+      "undefined" : "Beach"
+    },
+    "comment" : {
+      "undefined" : "Subclass of Hotel that represents all beach hotels found in the ontology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "68",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#Japanese",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Japanese",
+      "undefined" : "Japanese"
+    },
+    "comment" : {
+      "undefined" : "Subclass that represents all japanese style restaurants found in the ontology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "29",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#Monument",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Monument",
+      "undefined" : "Monument"
+    },
+    "comment" : {
+      "undefined" : "Subclass of POI that represents all point of interests that are monuments and can be found in the ontology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "8",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "75",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "76",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "77",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "64",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "36",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#Gastronomic",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Gastronomic",
+      "undefined" : "Gastronomic"
+    },
+    "comment" : {
+      "undefined" : "Subclass of Event that represents all gastronomical events found in the ontology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "1",
+    "superClasses" : [ "46" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "78",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "81",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#HotelLuxe",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HotelLuxe",
+      "undefined" : "Luxury"
+    },
+    "comment" : {
+      "undefined" : "Subclass of Hotel that represents all luxury hotels found in the ontology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "67",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#HotelBusiness",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HotelBusiness",
+      "undefined" : "Business"
+    },
+    "comment" : {
+      "undefined" : "Subclass of Hotel that represents all business hotels found in the ontology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "66",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#Italian",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Italian",
+      "undefined" : "Italian"
+    },
+    "comment" : {
+      "undefined" : "Subclass that represents all italian style restaurants found in the ontology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "28",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "80",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "110",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "111",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "112",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "85",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "71",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "87",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#Musical",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Musical",
+      "undefined" : "Musical"
+    },
+    "comment" : {
+      "undefined" : "Subclass of Event that represents all musical events found in the ontology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "2",
+    "superClasses" : [ "46" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "73",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "117",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "108",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "101",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#Metro",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Metro",
+      "undefined" : "Subway"
+    },
+    "comment" : {
+      "undefined" : "Subclass of Transport that represents all subway found in the ontology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "33",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "23",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "115",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#Park",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Park",
+      "undefined" : "Park"
+    },
+    "comment" : {
+      "undefined" : "Subclass of POI that represents all point of interests that are parks and can be found in the ontology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "9",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#Technological",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Technological",
+      "undefined" : "Technological"
+    },
+    "comment" : {
+      "undefined" : "Subclass of Event that represents all technological events found in the ontology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "19",
+    "superClasses" : [ "46" ]
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#Beach",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Beach",
+      "undefined" : "Beach"
+    },
+    "comment" : {
+      "undefined" : "Subclass of POI that represents all point of interests that are beaches and can be found in the ontology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "10",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#HotelTourism",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HotelTourism",
+      "undefined" : "Tourism"
+    },
+    "comment" : {
+      "undefined" : "Subclass of Hotel that represents all tourist hotels found in the ontology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "69",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#Transport",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Transport",
+      "undefined" : "Transport"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/example#TransSevilla",
+      "baseIri" : "https://w3id.org/example",
+      "comment" : {
+        "undefined" : "Trans Sevilla"
+      },
+      "labels" : {
+        "IRI-based" : "TransSevilla",
+        "undefined" : "TransSevilla"
+      }
+    } ],
+    "subClasses" : [ "39", "14", "50", "25", "33" ],
+    "comment" : {
+      "undefined" : "Class that represents all transports found in the ontology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#Andalusian",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Andalusian",
+      "undefined" : "Andalusian"
+    },
+    "comment" : {
+      "undefined" : "Subclass that represents all andalusian style restaurants found in the ontology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "31",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#Sport",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sport",
+      "undefined" : "Sport"
+    },
+    "comment" : {
+      "undefined" : "Subclass of Event that represents all sport events found in the ontology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "21",
+    "superClasses" : [ "46" ]
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#Cultural",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Cultural",
+      "undefined" : "Cultural"
+    },
+    "comment" : {
+      "undefined" : "Subclass of POI that represents all point of interests that are cultural and can be found in the ontology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "18",
+    "superClasses" : [ "46" ]
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#Bike",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Bike",
+      "undefined" : "Bike"
+    },
+    "comment" : {
+      "undefined" : "Subclass of Transport that represents all bikes found in the ontology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "50",
+    "superClasses" : [ "15" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "20",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "22",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "26",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "34",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "35",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "38",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "40",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "41",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "42",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "43",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "51",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "52",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "53",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "54",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "55",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "56",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "57",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "58",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "59",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "61",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "82",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "83",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "84",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "88",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "90",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "91",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "92",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "93",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "94",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "95",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "96",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "97",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "98",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "100",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "105",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "107",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "113",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "116",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "118",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "119",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "120",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "121",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "122",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "123",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "124",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "125",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "126",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "127",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "128",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "129",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "130",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "132",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "133",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "134",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "135",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "136",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "138",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "139",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "140",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "141",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "142",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "143",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "144",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "145",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "146",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "147",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "149",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "150",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#existsIn",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "existsIn",
+      "undefined" : "existsIn"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "restaurant exists in city"
+    },
+    "attributes" : [ "object", "external", "asymmetric" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#isLocatedIn",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "isLocatedIn",
+      "undefined" : "isLocatedIn"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "hotel is located in city"
+    },
+    "attributes" : [ "object", "external", "asymmetric" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#isPartOf",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "isPartOf",
+      "undefined" : "isPartOf"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "point of interest is part of city"
+    },
+    "attributes" : [ "object", "external", "asymmetric" ],
+    "id" : "16"
+  }, {
+    "range" : "19",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "17"
+  }, {
+    "range" : "21",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#transportId",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "transportId",
+      "undefined" : "transportId"
+    },
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "transport identifier"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "22"
+  }, {
+    "range" : "14",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#averageCost",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "averageCost",
+      "undefined" : "averageTransportCost"
+    },
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "property that defines the average cost of a transport"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "26"
+  }, {
+    "range" : "14",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "32"
+  }, {
+    "range" : "2",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#averagePrice",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "averagePrice",
+      "undefined" : "averageServicePrice"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Property that defines the average service price of a restaurant"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "35"
+  }, {
+    "range" : "1",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "37"
+  }, {
+    "range" : "25",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
+  }, {
+    "range" : "33",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "40"
+  }, {
+    "range" : "25",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "41"
+  }, {
+    "range" : "14",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#type",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "type",
+      "undefined" : "typeTransport"
+    },
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "type of transport"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#takesPlaceIn",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "takesPlaceIn",
+      "undefined" : "takesPlaceIn"
+    },
+    "domain" : "46",
+    "comment" : {
+      "undefined" : "event takes place in city"
+    },
+    "attributes" : [ "object", "external", "asymmetric" ],
+    "id" : "45"
+  }, {
+    "iri" : "https://w3id.org/example#typeRestaurant",
+    "baseIri" : "https://w3id.org/example",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "typeRestaurant",
+      "undefined" : "typeRestaurant"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "type of restaurant"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "47"
+  }, {
+    "range" : "25",
+    "domain" : "50",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "49"
+  }, {
+    "range" : "33",
+    "domain" : "50",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "51"
+  }, {
+    "range" : "14",
+    "domain" : "50",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "52"
+  }, {
+    "range" : "9",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "53"
+  }, {
+    "range" : "7",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "54"
+  }, {
+    "range" : "39",
+    "domain" : "50",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "55"
+  }, {
+    "range" : "9",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "56"
+  }, {
+    "range" : "8",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "57"
+  }, {
+    "range" : "9",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "58"
+  }, {
+    "range" : "7",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#price",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "price",
+      "undefined" : "pricePerNight"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "price per night of the hotel"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#hotelId",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "hotelId",
+      "undefined" : "hotelId"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "hotel identifier"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "63"
+  }, {
+    "iri" : "https://w3id.org/example#rateRestaurant",
+    "baseIri" : "https://w3id.org/example",
+    "range" : "71",
+    "label" : {
+      "IRI-based" : "rateRestaurant",
+      "undefined" : "rateRestaurant"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "average rate of the restaurant"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "70"
+  }, {
+    "iri" : "https://w3id.org/example#nameCity",
+    "baseIri" : "https://w3id.org/example",
+    "range" : "73",
+    "label" : {
+      "IRI-based" : "nameCity"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "name of the city"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#name",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "range" : "60",
+    "label" : {
+      "IRI-based" : "name",
+      "undefined" : "nameHotel"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "name of the hotel"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "74"
+  }, {
+    "iri" : "https://w3id.org/example#typeHotel",
+    "baseIri" : "https://w3id.org/example",
+    "range" : "80",
+    "label" : {
+      "IRI-based" : "typeHotel",
+      "undefined" : "typeHotel"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "type of hotel"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "79"
+  }, {
+    "range" : "69",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "82"
+  }, {
+    "range" : "69",
+    "domain" : "66",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "83"
+  }, {
+    "iri" : "https://w3id.org/example#namePOI",
+    "baseIri" : "https://w3id.org/example",
+    "range" : "85",
+    "label" : {
+      "IRI-based" : "namePOI",
+      "undefined" : "namePOI"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "name of the point of interest"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "84"
+  }, {
+    "iri" : "https://w3id.org/example#rateHotel",
+    "baseIri" : "https://w3id.org/example",
+    "range" : "87",
+    "label" : {
+      "IRI-based" : "rateHotel",
+      "undefined" : "rateHotel"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "average rate of the hotel"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "86"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#ciuitatId",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "range" : "81",
+    "label" : {
+      "IRI-based" : "ciuitatId",
+      "undefined" : "cityId"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "city identifier"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "88"
+  }, {
+    "range" : "67",
+    "domain" : "66",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "89"
+  }, {
+    "range" : "66",
+    "domain" : "68",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "90"
+  }, {
+    "range" : "19",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "91"
+  }, {
+    "range" : "69",
+    "domain" : "68",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "92"
+  }, {
+    "range" : "67",
+    "domain" : "68",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "93"
+  }, {
+    "range" : "19",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "94"
+  }, {
+    "range" : "21",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "95"
+  }, {
+    "range" : "19",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#movesIn",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "movesIn",
+      "undefined" : "movesIn"
+    },
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "transport moves in city"
+    },
+    "attributes" : [ "object", "external", "asymmetric" ],
+    "id" : "97"
+  }, {
+    "range" : "21",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "98"
+  }, {
+    "range" : "4",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "99"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#rate",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "range" : "101",
+    "label" : {
+      "IRI-based" : "rate",
+      "undefined" : "ratePOI"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "average rate of the point of interest"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "100"
+  }, {
+    "range" : "6",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "102"
+  }, {
+    "range" : "4",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "103"
+  }, {
+    "range" : "4",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "104"
+  }, {
+    "range" : "6",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "105"
+  }, {
+    "range" : "6",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#restauranId",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "range" : "108",
+    "label" : {
+      "IRI-based" : "restauranId",
+      "undefined" : "restauranId"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "restaurant identifier"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "107"
+  }, {
+    "range" : "6",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "109"
+  }, {
+    "iri" : "https://w3id.org/example#nameRestaurant",
+    "baseIri" : "https://w3id.org/example",
+    "range" : "112",
+    "label" : {
+      "IRI-based" : "nameRestaurant",
+      "undefined" : "nameRestaurant"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "name of the restaurant"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#stars",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "range" : "115",
+    "label" : {
+      "IRI-based" : "stars",
+      "undefined" : "stars"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "number of stars of the hotel"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "114"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#date",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "range" : "76",
+    "label" : {
+      "IRI-based" : "date",
+      "undefined" : "date"
+    },
+    "domain" : "46",
+    "comment" : {
+      "undefined" : "event date"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "116"
+  }, {
+    "range" : "15",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "118"
+  }, {
+    "range" : "13",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "119"
+  }, {
+    "range" : "30",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "120"
+  }, {
+    "range" : "29",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "121"
+  }, {
+    "range" : "13",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "122"
+  }, {
+    "range" : "30",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "123"
+  }, {
+    "iri" : "https://w3id.org/example#typePOI",
+    "baseIri" : "https://w3id.org/example",
+    "range" : "111",
+    "label" : {
+      "IRI-based" : "typePOI",
+      "undefined" : "typePOI"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "type of point of interest"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "124"
+  }, {
+    "range" : "13",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "125"
+  }, {
+    "range" : "30",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "126"
+  }, {
+    "range" : "30",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "127"
+  }, {
+    "range" : "28",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "128"
+  }, {
+    "range" : "29",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "129"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#eventId",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "range" : "75",
+    "label" : {
+      "IRI-based" : "eventId",
+      "undefined" : "eventId"
+    },
+    "domain" : "46",
+    "comment" : {
+      "undefined" : "event identifier"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "130"
+  }, {
+    "range" : "15",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "131"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#location",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "location",
+      "undefined" : "location"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "geo location of a city"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "132"
+  }, {
+    "range" : "15",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "133"
+  }, {
+    "iri" : "https://w3id.org/example#typeEvent",
+    "baseIri" : "https://w3id.org/example",
+    "range" : "110",
+    "label" : {
+      "IRI-based" : "typeEvent"
+    },
+    "domain" : "46",
+    "comment" : {
+      "undefined" : "type of event"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "134"
+  }, {
+    "range" : "15",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "135"
+  }, {
+    "range" : "15",
+    "domain" : "50",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "136"
+  }, {
+    "range" : "46",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "137"
+  }, {
+    "range" : "46",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "138"
+  }, {
+    "range" : "46",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "139"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#poiID",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "poiID",
+      "undefined" : "poiId"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "poi identifier"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "140"
+  }, {
+    "range" : "46",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "141"
+  }, {
+    "range" : "46",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "142"
+  }, {
+    "range" : "12",
+    "domain" : "69",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "143"
+  }, {
+    "iri" : "https://w3id.org/example#nameEvent",
+    "baseIri" : "https://w3id.org/example",
+    "range" : "117",
+    "label" : {
+      "IRI-based" : "nameEvent"
+    },
+    "domain" : "46",
+    "comment" : {
+      "undefined" : "name of the event"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "144"
+  }, {
+    "range" : "12",
+    "domain" : "68",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "145"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/transport#company",
+    "baseIri" : "http://www.owl-ontologies.com/transport",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "company",
+      "undefined" : "company"
+    },
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "owning company of a transport"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "146"
+  }, {
+    "range" : "4",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "147"
+  }, {
+    "range" : "4",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "148"
+  }, {
+    "range" : "12",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "149"
+  }, {
+    "range" : "12",
+    "domain" : "66",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "150"
+  } ]
+}

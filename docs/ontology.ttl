@@ -1,0 +1,762 @@
+@prefix : <https://w3id.org/example#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/example#> .
+
+<https://w3id.org/example#> rdf:type owl:Ontology ;
+                             owl:versionIRI <https://w3id.org/example/1.0.1> ;
+                             <http://purl.org/dc/terms/created> "2025-04-21"^^xsd:date ;
+                             <http://purl.org/dc/terms/creator> <https://w3id.org/people#MiquelPratsURI> ;
+                             <http://purl.org/dc/terms/description> "This ontology is a set diferent restaurants, events, hotels, points of interest and transports from different spanish cities."@en ;
+                             <http://purl.org/dc/terms/issued> "2025-04-27"^^xsd:date ;
+                             <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                             <http://purl.org/dc/terms/title> "Ontology about Smart Tourism and Recomendations (OTIR)"@en ;
+                             <http://purl.org/vocab/vann/preferredNamespacePrefix> "otir" ;
+                             owl:priorVersion <https://w3id.org/example/1.0.0> ;
+                             owl:versionInfo "1.0.1" ;
+                             <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#priorVersion
+owl:priorVersion rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionIRI
+owl:versionIRI rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.owl-ontologies.com/transport#existsIn
+<http://www.owl-ontologies.com/transport#existsIn> rdf:type owl:ObjectProperty ,
+                                                            owl:AsymmetricProperty ;
+                                                   rdfs:domain <http://www.owl-ontologies.com/transport#Restaurant> ;
+                                                   rdfs:range <http://www.owl-ontologies.com/transport#City> ;
+                                                   rdfs:comment "restaurant exists in city" ;
+                                                   rdfs:label "existsIn" .
+
+
+###  http://www.owl-ontologies.com/transport#isLocatedIn
+<http://www.owl-ontologies.com/transport#isLocatedIn> rdf:type owl:ObjectProperty ,
+                                                               owl:AsymmetricProperty ;
+                                                      rdfs:domain <http://www.owl-ontologies.com/transport#Hotel> ;
+                                                      rdfs:range <http://www.owl-ontologies.com/transport#City> ;
+                                                      rdfs:comment "hotel is located in city" ;
+                                                      rdfs:label "isLocatedIn" .
+
+
+###  http://www.owl-ontologies.com/transport#isPartOf
+<http://www.owl-ontologies.com/transport#isPartOf> rdf:type owl:ObjectProperty ,
+                                                            owl:AsymmetricProperty ;
+                                                   rdfs:domain <http://www.owl-ontologies.com/transport#POI> ;
+                                                   rdfs:range <http://www.owl-ontologies.com/transport#City> ;
+                                                   rdfs:comment "point of interest is part of city" ;
+                                                   rdfs:label "isPartOf" .
+
+
+###  http://www.owl-ontologies.com/transport#movesIn
+<http://www.owl-ontologies.com/transport#movesIn> rdf:type owl:ObjectProperty ,
+                                                           owl:AsymmetricProperty ;
+                                                  rdfs:domain <http://www.owl-ontologies.com/transport#Transport> ;
+                                                  rdfs:range <http://www.owl-ontologies.com/transport#City> ;
+                                                  rdfs:comment "transport moves in city" ;
+                                                  rdfs:label "movesIn" .
+
+
+###  http://www.owl-ontologies.com/transport#takesPlaceIn
+<http://www.owl-ontologies.com/transport#takesPlaceIn> rdf:type owl:ObjectProperty ,
+                                                                owl:AsymmetricProperty ;
+                                                       rdfs:domain <http://www.owl-ontologies.com/transport#Event> ;
+                                                       rdfs:range <http://www.owl-ontologies.com/transport#City> ;
+                                                       rdfs:comment "event takes place in city" ;
+                                                       rdfs:label "takesPlaceIn" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.owl-ontologies.com/transport#averageCost
+<http://www.owl-ontologies.com/transport#averageCost> rdf:type owl:DatatypeProperty ;
+                                                      rdfs:domain <http://www.owl-ontologies.com/transport#Transport> ;
+                                                      rdfs:range xsd:decimal ;
+                                                      rdfs:comment "property that defines the average cost of a transport" ;
+                                                      rdfs:label "averageTransportCost" .
+
+
+###  http://www.owl-ontologies.com/transport#averagePrice
+<http://www.owl-ontologies.com/transport#averagePrice> rdf:type owl:DatatypeProperty ;
+                                                       rdfs:domain <http://www.owl-ontologies.com/transport#Restaurant> ;
+                                                       rdfs:range xsd:decimal ;
+                                                       rdfs:comment "Property that defines the average service price of a restaurant" ;
+                                                       rdfs:label "averageServicePrice" .
+
+
+###  http://www.owl-ontologies.com/transport#ciuitatId
+<http://www.owl-ontologies.com/transport#ciuitatId> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:domain <http://www.owl-ontologies.com/transport#City> ;
+                                                    rdfs:range xsd:integer ;
+                                                    rdfs:comment "city identifier" ;
+                                                    rdfs:label "cityId" .
+
+
+###  http://www.owl-ontologies.com/transport#company
+<http://www.owl-ontologies.com/transport#company> rdf:type owl:DatatypeProperty ;
+                                                  rdfs:domain <http://www.owl-ontologies.com/transport#Transport> ;
+                                                  rdfs:range xsd:string ;
+                                                  rdfs:comment "owning company of a transport" ;
+                                                  rdfs:label "company" .
+
+
+###  http://www.owl-ontologies.com/transport#date
+<http://www.owl-ontologies.com/transport#date> rdf:type owl:DatatypeProperty ;
+                                               rdfs:domain <http://www.owl-ontologies.com/transport#Event> ;
+                                               rdfs:range xsd:date ;
+                                               rdfs:comment "event date" ;
+                                               rdfs:label "date" .
+
+
+###  http://www.owl-ontologies.com/transport#eventId
+<http://www.owl-ontologies.com/transport#eventId> rdf:type owl:DatatypeProperty ;
+                                                  rdfs:domain <http://www.owl-ontologies.com/transport#Event> ;
+                                                  rdfs:range xsd:integer ;
+                                                  rdfs:comment "event identifier" ;
+                                                  rdfs:label "eventId" .
+
+
+###  http://www.owl-ontologies.com/transport#hotelId
+<http://www.owl-ontologies.com/transport#hotelId> rdf:type owl:DatatypeProperty ;
+                                                  rdfs:domain <http://www.owl-ontologies.com/transport#Hotel> ;
+                                                  rdfs:range xsd:integer ;
+                                                  rdfs:comment "hotel identifier" ;
+                                                  rdfs:label "hotelId" .
+
+
+###  http://www.owl-ontologies.com/transport#location
+<http://www.owl-ontologies.com/transport#location> rdf:type owl:DatatypeProperty ;
+                                                   rdfs:domain <http://www.owl-ontologies.com/transport#City> ;
+                                                   rdfs:range xsd:string ;
+                                                   rdfs:comment "geo location of a city" ;
+                                                   rdfs:label "location" .
+
+
+###  http://www.owl-ontologies.com/transport#name
+<http://www.owl-ontologies.com/transport#name> rdf:type owl:DatatypeProperty ;
+                                               rdfs:domain <http://www.owl-ontologies.com/transport#Hotel> ;
+                                               rdfs:range xsd:string ;
+                                               rdfs:comment "name of the hotel" ;
+                                               rdfs:label "nameHotel" .
+
+
+###  http://www.owl-ontologies.com/transport#poiID
+<http://www.owl-ontologies.com/transport#poiID> rdf:type owl:DatatypeProperty ;
+                                                rdfs:domain <http://www.owl-ontologies.com/transport#POI> ;
+                                                rdfs:range xsd:integer ;
+                                                rdfs:comment "poi identifier" ;
+                                                rdfs:label "poiId" .
+
+
+###  http://www.owl-ontologies.com/transport#price
+<http://www.owl-ontologies.com/transport#price> rdf:type owl:DatatypeProperty ;
+                                                rdfs:domain <http://www.owl-ontologies.com/transport#Hotel> ;
+                                                rdfs:range xsd:decimal ;
+                                                rdfs:comment "price per night of the hotel" ;
+                                                rdfs:label "pricePerNight" .
+
+
+###  http://www.owl-ontologies.com/transport#rate
+<http://www.owl-ontologies.com/transport#rate> rdf:type owl:DatatypeProperty ;
+                                               rdfs:domain <http://www.owl-ontologies.com/transport#POI> ;
+                                               rdfs:range xsd:decimal ;
+                                               rdfs:comment "average rate of the point of interest" ;
+                                               rdfs:label "ratePOI" .
+
+
+###  http://www.owl-ontologies.com/transport#restauranId
+<http://www.owl-ontologies.com/transport#restauranId> rdf:type owl:DatatypeProperty ;
+                                                      rdfs:domain <http://www.owl-ontologies.com/transport#Restaurant> ;
+                                                      rdfs:range xsd:integer ;
+                                                      rdfs:comment "restaurant identifier" ;
+                                                      rdfs:label "restauranId" .
+
+
+###  http://www.owl-ontologies.com/transport#stars
+<http://www.owl-ontologies.com/transport#stars> rdf:type owl:DatatypeProperty ;
+                                                rdfs:domain <http://www.owl-ontologies.com/transport#Hotel> ;
+                                                rdfs:range xsd:integer ;
+                                                rdfs:comment "number of stars of the hotel" ;
+                                                rdfs:label "stars" .
+
+
+###  http://www.owl-ontologies.com/transport#transportId
+<http://www.owl-ontologies.com/transport#transportId> rdf:type owl:DatatypeProperty ;
+                                                      rdfs:domain <http://www.owl-ontologies.com/transport#Transport> ;
+                                                      rdfs:range xsd:integer ;
+                                                      rdfs:comment "transport identifier" ;
+                                                      rdfs:label "transportId" .
+
+
+###  http://www.owl-ontologies.com/transport#type
+<http://www.owl-ontologies.com/transport#type> rdf:type owl:DatatypeProperty ;
+                                               rdfs:domain <http://www.owl-ontologies.com/transport#Transport> ;
+                                               rdfs:range xsd:string ;
+                                               rdfs:comment "type of transport" ;
+                                               rdfs:label "typeTransport" .
+
+
+###  https://w3id.org/example#nameCity
+:nameCity rdf:type owl:DatatypeProperty ;
+          rdfs:domain <http://www.owl-ontologies.com/transport#City> ;
+          rdfs:range xsd:string ;
+          rdfs:comment "name of the city" .
+
+
+###  https://w3id.org/example#nameEvent
+:nameEvent rdf:type owl:DatatypeProperty ;
+           rdfs:domain <http://www.owl-ontologies.com/transport#Event> ;
+           rdfs:range xsd:string ;
+           rdfs:comment "name of the event" .
+
+
+###  https://w3id.org/example#namePOI
+:namePOI rdf:type owl:DatatypeProperty ;
+         rdfs:domain <http://www.owl-ontologies.com/transport#POI> ;
+         rdfs:range xsd:string ;
+         rdfs:comment "name of the point of interest" ;
+         rdfs:label "namePOI" .
+
+
+###  https://w3id.org/example#nameRestaurant
+:nameRestaurant rdf:type owl:DatatypeProperty ;
+                rdfs:domain <http://www.owl-ontologies.com/transport#Restaurant> ;
+                rdfs:range xsd:string ;
+                rdfs:comment "name of the restaurant" ;
+                rdfs:label "nameRestaurant" .
+
+
+###  https://w3id.org/example#rateHotel
+:rateHotel rdf:type owl:DatatypeProperty ;
+           rdfs:domain <http://www.owl-ontologies.com/transport#Hotel> ;
+           rdfs:range xsd:decimal ;
+           rdfs:comment "average rate of the hotel" ;
+           rdfs:label "rateHotel" .
+
+
+###  https://w3id.org/example#rateRestaurant
+:rateRestaurant rdf:type owl:DatatypeProperty ;
+                rdfs:domain <http://www.owl-ontologies.com/transport#Restaurant> ;
+                rdfs:range xsd:decimal ;
+                rdfs:comment "average rate of the restaurant" ;
+                rdfs:label "rateRestaurant" .
+
+
+###  https://w3id.org/example#typeEvent
+:typeEvent rdf:type owl:DatatypeProperty ;
+           rdfs:domain <http://www.owl-ontologies.com/transport#Event> ;
+           rdfs:range xsd:string ;
+           rdfs:comment "type of event" .
+
+
+###  https://w3id.org/example#typeHotel
+:typeHotel rdf:type owl:DatatypeProperty ;
+           rdfs:domain <http://www.owl-ontologies.com/transport#Hotel> ;
+           rdfs:range xsd:string ;
+           rdfs:comment "type of hotel" ;
+           rdfs:label "typeHotel" .
+
+
+###  https://w3id.org/example#typePOI
+:typePOI rdf:type owl:DatatypeProperty ;
+         rdfs:domain <http://www.owl-ontologies.com/transport#POI> ;
+         rdfs:range xsd:string ;
+         rdfs:comment "type of point of interest" ;
+         rdfs:label "typePOI" .
+
+
+###  https://w3id.org/example#typeRestaurant
+:typeRestaurant rdf:type owl:DatatypeProperty ;
+                rdfs:domain <http://www.owl-ontologies.com/transport#Restaurant> ;
+                rdfs:range xsd:string ;
+                rdfs:comment "type of restaurant" ;
+                rdfs:label "typeRestaurant" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.owl-ontologies.com/transport#Andalusian
+<http://www.owl-ontologies.com/transport#Andalusian> rdf:type owl:Class ;
+                                                     owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty :typeRestaurant ;
+                                                                           owl:hasValue "Andalusa"
+                                                                         ] ;
+                                                     rdfs:subClassOf <http://www.owl-ontologies.com/transport#Restaurant> ;
+                                                     rdfs:comment "Subclass that represents all andalusian style restaurants found in the ontology" ;
+                                                     rdfs:label "Andalusian" .
+
+
+###  http://www.owl-ontologies.com/transport#Beach
+<http://www.owl-ontologies.com/transport#Beach> rdf:type owl:Class ;
+                                                owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty :typePOI ;
+                                                                      owl:hasValue "Platja"
+                                                                    ] ;
+                                                rdfs:subClassOf <http://www.owl-ontologies.com/transport#POI> ;
+                                                rdfs:comment "Subclass of POI that represents all point of interests that are beaches and can be found in the ontology" ;
+                                                rdfs:label "Beach" .
+
+
+###  http://www.owl-ontologies.com/transport#Bike
+<http://www.owl-ontologies.com/transport#Bike> rdf:type owl:Class ;
+                                               owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <http://www.owl-ontologies.com/transport#type> ;
+                                                                     owl:hasValue "bicicleta"
+                                                                   ] ;
+                                               rdfs:subClassOf <http://www.owl-ontologies.com/transport#Transport> ;
+                                               rdfs:comment "Subclass of Transport that represents all bikes found in the ontology" ;
+                                               rdfs:label "Bike" .
+
+
+###  http://www.owl-ontologies.com/transport#Bus
+<http://www.owl-ontologies.com/transport#Bus> rdf:type owl:Class ;
+                                              owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <http://www.owl-ontologies.com/transport#type> ;
+                                                                    owl:hasValue "Autobus"
+                                                                  ] ;
+                                              rdfs:subClassOf <http://www.owl-ontologies.com/transport#Transport> ;
+                                              rdfs:comment "Subclass of Transport that represents all buses found in the ontology" ;
+                                              rdfs:label "Bus" .
+
+
+###  http://www.owl-ontologies.com/transport#City
+<http://www.owl-ontologies.com/transport#City> rdf:type owl:Class ;
+                                               rdfs:comment "Class that represents all cities found in the ontology" ;
+                                               rdfs:label "City" .
+
+
+###  http://www.owl-ontologies.com/transport#Cultural
+<http://www.owl-ontologies.com/transport#Cultural> rdf:type owl:Class ;
+                                                   owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :typeEvent ;
+                                                                         owl:hasValue "Cultural"
+                                                                       ] ;
+                                                   rdfs:subClassOf <http://www.owl-ontologies.com/transport#Event> ;
+                                                   rdfs:comment "Subclass of POI that represents all point of interests that are cultural and can be found in the ontology" ;
+                                                   rdfs:label "Cultural" .
+
+
+###  http://www.owl-ontologies.com/transport#Event
+<http://www.owl-ontologies.com/transport#Event> rdf:type owl:Class ;
+                                                rdfs:comment "Class that represents all events found in the ontology" ;
+                                                rdfs:label "Event" .
+
+
+###  http://www.owl-ontologies.com/transport#Gastronomic
+<http://www.owl-ontologies.com/transport#Gastronomic> rdf:type owl:Class ;
+                                                      owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty :typeEvent ;
+                                                                            owl:hasValue "Gastronomic"
+                                                                          ] ;
+                                                      rdfs:subClassOf <http://www.owl-ontologies.com/transport#Event> ;
+                                                      rdfs:comment "Subclass of Event that represents all gastronomical events found in the ontology" ;
+                                                      rdfs:label "Gastronomic" .
+
+
+###  http://www.owl-ontologies.com/transport#Hotel
+<http://www.owl-ontologies.com/transport#Hotel> rdf:type owl:Class ;
+                                                rdfs:comment "Class that represents all hotels found in the ontology" ;
+                                                rdfs:label "Hotel" .
+
+
+###  http://www.owl-ontologies.com/transport#HotelBeach
+<http://www.owl-ontologies.com/transport#HotelBeach> rdf:type owl:Class ;
+                                                     owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty :typeHotel ;
+                                                                           owl:hasValue "Platja"
+                                                                         ] ;
+                                                     rdfs:subClassOf <http://www.owl-ontologies.com/transport#Hotel> ;
+                                                     rdfs:comment "Subclass of Hotel that represents all beach hotels found in the ontology" ;
+                                                     rdfs:label "Beach" .
+
+
+###  http://www.owl-ontologies.com/transport#HotelBusiness
+<http://www.owl-ontologies.com/transport#HotelBusiness> rdf:type owl:Class ;
+                                                        owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty :typeHotel ;
+                                                                              owl:hasValue "Negocis"
+                                                                            ] ;
+                                                        rdfs:subClassOf <http://www.owl-ontologies.com/transport#Hotel> ;
+                                                        rdfs:comment "Subclass of Hotel that represents all business hotels found in the ontology" ;
+                                                        rdfs:label "Business" .
+
+
+###  http://www.owl-ontologies.com/transport#HotelLuxe
+<http://www.owl-ontologies.com/transport#HotelLuxe> rdf:type owl:Class ;
+                                                    owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty :typeHotel ;
+                                                                          owl:hasValue "Luxe"
+                                                                        ] ;
+                                                    rdfs:subClassOf <http://www.owl-ontologies.com/transport#Hotel> ;
+                                                    rdfs:comment "Subclass of Hotel that represents all luxury hotels found in the ontology" ;
+                                                    rdfs:label "Luxury" .
+
+
+###  http://www.owl-ontologies.com/transport#HotelTourism
+<http://www.owl-ontologies.com/transport#HotelTourism> rdf:type owl:Class ;
+                                                       owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :typeHotel ;
+                                                                             owl:hasValue "Turisme"
+                                                                           ] ;
+                                                       rdfs:subClassOf <http://www.owl-ontologies.com/transport#Hotel> ;
+                                                       rdfs:comment "Subclass of Hotel that represents all tourist hotels found in the ontology" ;
+                                                       rdfs:label "Tourism" .
+
+
+###  http://www.owl-ontologies.com/transport#Italian
+<http://www.owl-ontologies.com/transport#Italian> rdf:type owl:Class ;
+                                                  owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty :typeRestaurant ;
+                                                                        owl:hasValue "Italiana"
+                                                                      ] ;
+                                                  rdfs:subClassOf <http://www.owl-ontologies.com/transport#Restaurant> ;
+                                                  rdfs:comment "Subclass that represents all italian style restaurants found in the ontology" ;
+                                                  rdfs:label "Italian" .
+
+
+###  http://www.owl-ontologies.com/transport#Japanese
+<http://www.owl-ontologies.com/transport#Japanese> rdf:type owl:Class ;
+                                                   owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :typeRestaurant ;
+                                                                         owl:hasValue "Japonesa"
+                                                                       ] ;
+                                                   rdfs:subClassOf <http://www.owl-ontologies.com/transport#Restaurant> ;
+                                                   rdfs:comment "Subclass that represents all japanese style restaurants found in the ontology" ;
+                                                   rdfs:label "Japanese" .
+
+
+###  http://www.owl-ontologies.com/transport#Mediterranean
+<http://www.owl-ontologies.com/transport#Mediterranean> rdf:type owl:Class ;
+                                                        owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty :typeRestaurant ;
+                                                                              owl:hasValue "Mediterrania"
+                                                                            ] ;
+                                                        rdfs:subClassOf <http://www.owl-ontologies.com/transport#Restaurant> ;
+                                                        rdfs:comment "Subclass that represents all mediterranean style restaurants found in the ontology" ;
+                                                        rdfs:label "Mediterranean" .
+
+
+###  http://www.owl-ontologies.com/transport#Metro
+<http://www.owl-ontologies.com/transport#Metro> rdf:type owl:Class ;
+                                                owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty <http://www.owl-ontologies.com/transport#type> ;
+                                                                      owl:hasValue "Metro"
+                                                                    ] ;
+                                                rdfs:subClassOf <http://www.owl-ontologies.com/transport#Transport> ;
+                                                rdfs:comment "Subclass of Transport that represents all subway found in the ontology" ;
+                                                rdfs:label "Subway" .
+
+
+###  http://www.owl-ontologies.com/transport#Mexican
+<http://www.owl-ontologies.com/transport#Mexican> rdf:type owl:Class ;
+                                                  owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty :typeRestaurant ;
+                                                                        owl:hasValue "Mexicana"
+                                                                      ] ;
+                                                  rdfs:subClassOf <http://www.owl-ontologies.com/transport#Restaurant> ;
+                                                  rdfs:comment "Subclass that represents all mexican style restaurants found in the ontology" ;
+                                                  rdfs:label "Mexican" .
+
+
+###  http://www.owl-ontologies.com/transport#Monument
+<http://www.owl-ontologies.com/transport#Monument> rdf:type owl:Class ;
+                                                   owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :typePOI ;
+                                                                         owl:hasValue "Monument"
+                                                                       ] ;
+                                                   rdfs:subClassOf <http://www.owl-ontologies.com/transport#POI> ;
+                                                   rdfs:comment "Subclass of POI that represents all point of interests that are monuments and can be found in the ontology" ;
+                                                   rdfs:label "Monument" .
+
+
+###  http://www.owl-ontologies.com/transport#Museum
+<http://www.owl-ontologies.com/transport#Museum> rdf:type owl:Class ;
+                                                 owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty :typePOI ;
+                                                                       owl:hasValue "Museu"
+                                                                     ] ;
+                                                 rdfs:subClassOf <http://www.owl-ontologies.com/transport#POI> ;
+                                                 rdfs:comment "Subclass of POI that represents all point of interests that are museums and can be found in the ontology" ;
+                                                 rdfs:label "Museum" .
+
+
+###  http://www.owl-ontologies.com/transport#Musical
+<http://www.owl-ontologies.com/transport#Musical> rdf:type owl:Class ;
+                                                  owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty :typeEvent ;
+                                                                        owl:hasValue "Musica"
+                                                                      ] ;
+                                                  rdfs:subClassOf <http://www.owl-ontologies.com/transport#Event> ;
+                                                  rdfs:comment "Subclass of Event that represents all musical events found in the ontology" ;
+                                                  rdfs:label "Musical" .
+
+
+###  http://www.owl-ontologies.com/transport#POI
+<http://www.owl-ontologies.com/transport#POI> rdf:type owl:Class ;
+                                              rdfs:comment "Class that represents all points of interest found in the ontology" ;
+                                              rdfs:label "POI" .
+
+
+###  http://www.owl-ontologies.com/transport#Park
+<http://www.owl-ontologies.com/transport#Park> rdf:type owl:Class ;
+                                               owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty :typePOI ;
+                                                                     owl:hasValue "Parc"
+                                                                   ] ;
+                                               rdfs:subClassOf <http://www.owl-ontologies.com/transport#POI> ;
+                                               rdfs:comment "Subclass of POI that represents all point of interests that are parks and can be found in the ontology" ;
+                                               rdfs:label "Park" .
+
+
+###  http://www.owl-ontologies.com/transport#Restaurant
+<http://www.owl-ontologies.com/transport#Restaurant> rdf:type owl:Class ;
+                                                     rdfs:comment "Class that represents all restaurants found in the ontology" ;
+                                                     rdfs:label "Restaurant" .
+
+
+###  http://www.owl-ontologies.com/transport#Sport
+<http://www.owl-ontologies.com/transport#Sport> rdf:type owl:Class ;
+                                                owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty :typeEvent ;
+                                                                      owl:hasValue "Esportiu"
+                                                                    ] ;
+                                                rdfs:subClassOf <http://www.owl-ontologies.com/transport#Event> ;
+                                                rdfs:comment "Subclass of Event that represents all sport events found in the ontology" ;
+                                                rdfs:label "Sport" .
+
+
+###  http://www.owl-ontologies.com/transport#Taxi
+<http://www.owl-ontologies.com/transport#Taxi> rdf:type owl:Class ;
+                                               owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <http://www.owl-ontologies.com/transport#type> ;
+                                                                     owl:hasValue "Taxi"
+                                                                   ] ;
+                                               rdfs:subClassOf <http://www.owl-ontologies.com/transport#Transport> ;
+                                               rdfs:comment "Subclass of Transport that represents all taxies found in the ontology" ;
+                                               rdfs:label "Taxi" .
+
+
+###  http://www.owl-ontologies.com/transport#Technological
+<http://www.owl-ontologies.com/transport#Technological> rdf:type owl:Class ;
+                                                        owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty :typeEvent ;
+                                                                              owl:hasValue "Tecnologic"
+                                                                            ] ;
+                                                        rdfs:subClassOf <http://www.owl-ontologies.com/transport#Event> ;
+                                                        rdfs:comment "Subclass of Event that represents all technological events found in the ontology" ;
+                                                        rdfs:label "Technological" .
+
+
+###  http://www.owl-ontologies.com/transport#Tram
+<http://www.owl-ontologies.com/transport#Tram> rdf:type owl:Class ;
+                                               owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <http://www.owl-ontologies.com/transport#type> ;
+                                                                     owl:hasValue "Tramvia"
+                                                                   ] ;
+                                               rdfs:subClassOf <http://www.owl-ontologies.com/transport#Transport> ;
+                                               rdfs:comment "Subclass of Transport that represents all trams found in the ontology" ;
+                                               rdfs:label "Tram" .
+
+
+###  http://www.owl-ontologies.com/transport#Transport
+<http://www.owl-ontologies.com/transport#Transport> rdf:type owl:Class ;
+                                                    rdfs:comment "Class that represents all transports found in the ontology" ;
+                                                    rdfs:label "Transport" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.owl-ontologies.com/transport#HotelVistaSevilla
+<http://www.owl-ontologies.com/transport#HotelVistaSevilla> rdf:type owl:NamedIndividual ,
+                                                                     <http://www.owl-ontologies.com/transport#Hotel> ;
+                                                            <http://www.owl-ontologies.com/transport#isLocatedIn> :Sevilla ;
+                                                            <http://www.owl-ontologies.com/transport#hotelId> 1 ;
+                                                            <http://www.owl-ontologies.com/transport#name> "Hotel Vista Sevilla" ;
+                                                            <http://www.owl-ontologies.com/transport#price> 278.4 ;
+                                                            <http://www.owl-ontologies.com/transport#stars> 4 ;
+                                                            :rateHotel 4.7 ;
+                                                            :typeHotel "Platja" ;
+                                                            rdfs:comment "Hotel Vista Sevilla" ;
+                                                            rdfs:label "HotelVistaSevilla" .
+
+
+###  https://w3id.org/example#CarnavalSevilla
+:CarnavalSevilla rdf:type owl:NamedIndividual ,
+                          <http://www.owl-ontologies.com/transport#Event> ;
+                 <http://www.owl-ontologies.com/transport#takesPlaceIn> :Sevilla ;
+                 <http://www.owl-ontologies.com/transport#date> "2024-05-06"^^xsd:date ;
+                 <http://www.owl-ontologies.com/transport#eventId> 4 ;
+                 :nameEvent "Carnaval Sevilla" ;
+                 :typeEvent "Musica" ;
+                 rdfs:comment "Carnaval of Sevilla" ;
+                 rdfs:label "CarnavalSevilla" .
+
+
+###  https://w3id.org/example#CastellSevilla
+:CastellSevilla rdf:type owl:NamedIndividual ,
+                         <http://www.owl-ontologies.com/transport#POI> ;
+                <http://www.owl-ontologies.com/transport#isPartOf> :Sevilla ;
+                <http://www.owl-ontologies.com/transport#poiID> 1 ;
+                <http://www.owl-ontologies.com/transport#rate> 4.6 ;
+                :namePOI "Castell Sevilla" ;
+                :typePOI "Monument" ;
+                rdfs:comment "Castle of Sevilla" ;
+                rdfs:label "CastellSevilla" .
+
+
+###  https://w3id.org/example#RestaurantSaborSevilla
+:RestaurantSaborSevilla rdf:type owl:NamedIndividual ,
+                                 <http://www.owl-ontologies.com/transport#Restaurant> ;
+                        <http://www.owl-ontologies.com/transport#existsIn> :Sevilla ;
+                        <http://www.owl-ontologies.com/transport#averagePrice> 72 ;
+                        <http://www.owl-ontologies.com/transport#restauranId> 6 ;
+                        :nameRestaurant "Restaurant Sabor Sevilla" ;
+                        :rateRestaurant 4.1 ;
+                        :typeRestaurant "Italiana" ;
+                        rdfs:comment "Restaurant Sabor Sevilla" ;
+                        rdfs:label "RestaurantSaborSevilla" .
+
+
+###  https://w3id.org/example#Sevilla
+:Sevilla rdf:type owl:NamedIndividual ,
+                  <http://www.owl-ontologies.com/transport#City> ;
+         <http://www.owl-ontologies.com/transport#ciuitatId> 10 ;
+         <http://www.owl-ontologies.com/transport#location> "\"37.3886,-5.9823\"" ;
+         :nameCity "Sevilla" ;
+         rdfs:comment "Sevilla" ;
+         rdfs:label "Sevilla" .
+
+
+###  https://w3id.org/example#TransSevilla
+:TransSevilla rdf:type owl:NamedIndividual ,
+                       <http://www.owl-ontologies.com/transport#Transport> ;
+              <http://www.owl-ontologies.com/transport#movesIn> :Sevilla ;
+              <http://www.owl-ontologies.com/transport#averageCost> 9.48 ;
+              <http://www.owl-ontologies.com/transport#company> "Trans Sevilla" ;
+              <http://www.owl-ontologies.com/transport#transportId> 10 ;
+              <http://www.owl-ontologies.com/transport#type> "Autobus" ;
+              rdfs:comment "Trans Sevilla" ;
+              rdfs:label "TransSevilla" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.owl-ontologies.com/transport#Andalusian>
+                <http://www.owl-ontologies.com/transport#Italian>
+                <http://www.owl-ontologies.com/transport#Japanese>
+                <http://www.owl-ontologies.com/transport#Mediterranean>
+                <http://www.owl-ontologies.com/transport#Mexican>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.owl-ontologies.com/transport#Beach>
+                <http://www.owl-ontologies.com/transport#Monument>
+                <http://www.owl-ontologies.com/transport#Museum>
+                <http://www.owl-ontologies.com/transport#Park>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.owl-ontologies.com/transport#Bike>
+                <http://www.owl-ontologies.com/transport#Bus>
+                <http://www.owl-ontologies.com/transport#Metro>
+                <http://www.owl-ontologies.com/transport#Taxi>
+                <http://www.owl-ontologies.com/transport#Tram>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.owl-ontologies.com/transport#Cultural>
+                <http://www.owl-ontologies.com/transport#Gastronomic>
+                <http://www.owl-ontologies.com/transport#Musical>
+                <http://www.owl-ontologies.com/transport#Sport>
+                <http://www.owl-ontologies.com/transport#Technological>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.owl-ontologies.com/transport#HotelBeach>
+                <http://www.owl-ontologies.com/transport#HotelBusiness>
+                <http://www.owl-ontologies.com/transport#HotelLuxe>
+                <http://www.owl-ontologies.com/transport#HotelTourism>
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
